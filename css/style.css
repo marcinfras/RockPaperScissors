@@ -2,4 +2,95 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: gray;
+}
+
+.title {
+  font-size: 2.2rem;
+  padding: 20px 0;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 1.8rem;
+  padding: 30px 0 50px 0;
+}
+.score__name {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 20px;
+}
+.score__name--comp {
+  background-color: blue;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.options__option {
+  cursor: pointer;
+}
+.options__option--active {
+  transform: scale(1.1);
+}
+
+.choices {
+  display: none;
+  padding-top: 50px;
+  font-size: 1.6rem;
+}
+.choices--active {
+  display: block;
+}
+.choices__choice {
+  text-transform: uppercase;
+}
+
+.result {
+  margin: 20px auto 0 auto;
+  width: 50%;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 0;
+  font-size: 1.8rem;
+}
+.result--win {
+  background-color: green;
+  color: white;
+}
+.result--draw {
+  background-color: gray;
+  color: white;
+}
+.result--loss {
+  background-color: red;
+  color: white;
+}
+
+.resetBtn {
+  visibility: hidden;
+  margin-top: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+.resetBtn--active {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
